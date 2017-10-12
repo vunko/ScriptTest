@@ -19,7 +19,7 @@ public class Boss {
 	}
 	public void Magic( int mp ){
 		this.mp -= mp;
-		if (mp < 0) {
+		if (this.mp < 0) {
 			Debug.Log ("ＭＰが足りないため魔法が使えない");
 		} else {
 			Debug.Log ("魔法攻撃をした。残りＭＰは" + this.mp);
@@ -37,9 +37,11 @@ public class Bosstest : MonoBehaviour {
 		lastboss.Attack();
 		// 防御用の関数を呼び出す
 		lastboss.Defence(3);
-		
+		for(int i = 0; i < 11; i++){
 		lastboss.Magic(5);
-		for (Magic i = 1; i <= 10; i++) {
+
+
+
 		}
 	}
 
